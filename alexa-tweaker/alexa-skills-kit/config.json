@@ -1,0 +1,338 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "Tweeker",
+      "samples": [
+        "{mentorFirstName} {mentorLastName} had a tweeker with {menteeFirstName} {menteeLastName}",
+        "{mentorFirstName} {mentorLastName} had a tweeker with {menteeFirstName} {menteeLastName} about {tweekerTopic}",
+        "{mentorFirstName} {mentorLastName} led a tweeker with {menteeFirstName} {menteeLastName}",
+        "{mentorFirstName} {mentorLastName} and {menteeFirstName} {menteeLastName}",
+        "{mentorFirstName} {mentorLastName} and {menteeFirstName} {menteeLastName} about {tweekerTopic} ",
+        "{mentorFirstName} {mentorLastName} and {menteeFirstName} {menteeLastName} had a tweaker about {tweekerTopic} ",
+        "{mentorFirstName} {mentorLastName} mentored {menteeFirstName} {menteeLastName} about {tweekerTopic}",
+        "{menteeFirstName} {menteeLastName} was mentored by {mentorFirstName} {mentorLastName} about {tweekerTopic} ",
+        "{menteeFirstName} {menteeLastName} was mentored by {mentorFirstName} {mentorLastName}"
+      ],
+      "slots": [
+        {
+          "name": "mentorFirstName",
+          "type": "AMAZON.US_FIRST_NAME",
+          "samples": [
+            "{mentorFirstName} "
+          ]
+        },
+        {
+          "name": "mentorLastName",
+          "type": "LAST_NAME",
+          "samples": [
+            "{mentorLastName} "
+          ]
+        },
+        {
+          "name": "menteeFirstName",
+          "type": "AMAZON.US_FIRST_NAME",
+          "samples": [
+            "{menteeFirstName} "
+          ]
+        },
+        {
+          "name": "menteeLastName",
+          "type": "LAST_NAME",
+          "samples": [
+            "{menteeLastName} "
+          ]
+        },
+        {
+          "name": "tweekerTopic",
+          "type": "FREE_FORM_TOPIC",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "AMAZON.US_FIRST_NAME",
+      "values": [
+        {
+          "name": {
+            "value": "Geoff"
+          }
+        },
+        {
+          "name": {
+            "value": "Ervin"
+          }
+        },
+        {
+          "name": {
+            "value": "Abbey"
+          }
+        },
+        {
+          "name": {
+            "value": "Lizelle"
+          }
+        }
+      ]
+    },
+    {
+      "name": "FREE_FORM_TOPIC",
+      "values": [
+        {
+          "name": {
+            "value": "marketing"
+          }
+        },
+        {
+          "name": {
+            "value": "sales"
+          }
+        },
+        {
+          "name": {
+            "value": "technology"
+          }
+        },
+        {
+          "name": {
+            "value": "support"
+          }
+        },
+        {
+          "name": {
+            "value": "client"
+          }
+        },
+        {
+          "name": {
+            "value": "insights"
+          }
+        },
+        {
+          "name": {
+            "value": "market"
+          }
+        },
+        {
+          "name": {
+            "value": "tech"
+          }
+        },
+        {
+          "name": {
+            "value": "javascript"
+          }
+        },
+        {
+          "name": {
+            "value": "java"
+          }
+        },
+        {
+          "name": {
+            "value": "python"
+          }
+        },
+        {
+          "name": {
+            "value": "data visualization"
+          }
+        },
+        {
+          "name": {
+            "value": "learning"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LAST_NAME",
+      "values": [
+        {
+          "name": {
+            "value": "Alday"
+          }
+        },
+        {
+          "name": {
+            "value": "Alford"
+          }
+        },
+        {
+          "name": {
+            "value": "Anderson"
+          }
+        },
+        {
+          "name": {
+            "value": "Conran"
+          }
+        },
+        {
+          "name": {
+            "value": "Chudy"
+          }
+        },
+        {
+          "name": {
+            "value": "Dickinson"
+          }
+        },
+        {
+          "name": {
+            "value": "Downes"
+          }
+        },
+        {
+          "name": {
+            "value": "Ells"
+          }
+        },
+        {
+          "name": {
+            "value": "Garrett"
+          }
+        },
+        {
+          "name": {
+            "value": "Hayden"
+          }
+        },
+        {
+          "name": {
+            "value": "Holstein"
+          }
+        },
+        {
+          "name": {
+            "value": "Puskar"
+          }
+        },
+        {
+          "name": {
+            "value": "Rustici"
+          }
+        },
+        {
+          "name": {
+            "value": "Smith"
+          }
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-Tweeker.IntentSlot-mentorFirstName",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What is the mentor's first name?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-Tweeker.IntentSlot-mentorLastName",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What is the mentor's last name?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-Tweeker.IntentSlot-menteeFirstName",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What is the mentee's first name?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-Tweeker.IntentSlot-menteeLastName",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What is the mentee's last name?"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "Tweeker",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "mentorFirstName",
+            "type": "AMAZON.US_FIRST_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-Tweeker.IntentSlot-mentorFirstName"
+            }
+          },
+          {
+            "name": "mentorLastName",
+            "type": "LAST_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-Tweeker.IntentSlot-mentorLastName"
+            }
+          },
+          {
+            "name": "menteeFirstName",
+            "type": "AMAZON.US_FIRST_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-Tweeker.IntentSlot-menteeFirstName"
+            }
+          },
+          {
+            "name": "menteeLastName",
+            "type": "LAST_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-Tweeker.IntentSlot-menteeLastName"
+            }
+          },
+          {
+            "name": "tweekerTopic",
+            "type": "FREE_FORM_TOPIC",
+            "elicitationRequired": false,
+            "confirmationRequired": false,
+            "prompts": {}
+          }
+        ]
+      }
+    ]
+  }
+}

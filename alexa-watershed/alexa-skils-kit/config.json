@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "SendTestStatementIntent",
+      "samples": [
+        "send test statement",
+        "send test xapi statement",
+        "send test tin can statement"
+      ],
+      "slots": []
+    }
+  ]
+}

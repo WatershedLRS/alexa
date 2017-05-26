@@ -1,0 +1,16 @@
+{
+  "name": "alexa-watershed",
+  "version": "1.0.0",
+  "description": "An alexa skill for sending an xAPI statement to Watershed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Geoff Alday",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.9",
+    "dotenv": "^4.0.0",
+    "tincanjs": "^0.50.0"
+  }
+}
