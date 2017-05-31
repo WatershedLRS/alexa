@@ -120,9 +120,9 @@ exports.handler = (event, context) => {
     //alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
-}
+};
 
-function isSlotValid(request, slotName){
+function isSlotValid(request, slotName) {
     var slot = request.intent.slots[slotName];
     //console.log("request = "+JSON.stringify(request)); //uncomment if you want to see the request
     var slotValue;
@@ -136,7 +136,7 @@ function isSlotValid(request, slotName){
         // we don't have a value in the slot
         return false;
     }
-}
+};
 
 function createFullName(fName, lName) {
     return _.capitalize(fName) + ' ' + _.capitalize(lName);

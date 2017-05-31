@@ -74,7 +74,7 @@ exports.handler = (event, context) => {
     //alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
-}
+};
 
 function sendStatement(statement, callback) {
     // Connect to Watershed
