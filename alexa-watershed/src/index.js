@@ -10,7 +10,6 @@ var wsEndpoint = process.env.WS_ENDPOINT;
 var wsUsername = process.env.WS_USERNAME;
 var wsPassword = process.env.WS_PASSWORD;
 var alexaAppId = ''; // optional
-console.log('alexaAppId: ' + alexaAppId);
 
 var welcomeOutput = 'Watershed is ready.';
 var welcomeReprompt = 'Let me know what you want to do. ' +
