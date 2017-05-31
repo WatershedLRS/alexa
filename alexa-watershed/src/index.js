@@ -115,4 +115,4 @@ function sendStatement(statement, callback) {
             }
         }
     );
-};
+}

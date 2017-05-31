@@ -136,15 +136,15 @@ function isSlotValid(request, slotName) {
         // we don't have a value in the slot
         return false;
     }
-};
+}
 
 function createFullName(fName, lName) {
     return _.capitalize(fName) + ' ' + _.capitalize(lName);
-};
+}
 
 function createCompanyEmail(fName, lName, eDomain) {
     return _.lowerCase(fName) + '.' + _.lowerCase(lName) + '@' + eDomain;
-};
+}
 
 function sendStatement(statement, callback) {
     // Connect to Watershed
@@ -185,4 +185,4 @@ function sendStatement(statement, callback) {
             }
         }
     );
-};
+}
